@@ -1,15 +1,15 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
+const TOKEN = process.env.DISCORD_TOKEN;
+
+// *: Define discord intents:
 import { 
     Client, GatewayIntentBits, EmbedBuilder, Partials, 
     Message, Events, ActivityType, TextChannel 
   } from 'discord.js';
   import path from "node:path";
   import { fileURLToPath, pathToFileURL } from "node:url";
-
-
-const TOKEN = process.env.DISCORD_TOKEN;
 
 
 const client = new Client({
