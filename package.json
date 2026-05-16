@@ -2,7 +2,7 @@
   "name": "bald-discordlog-bot-v3",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bot.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
