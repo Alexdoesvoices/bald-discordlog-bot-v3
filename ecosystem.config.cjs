@@ -1,12 +1,14 @@
 module.exports = {
-    apps: [{
-      name: "baldridge-pnpm-discordlogbot-v2",
-      script: "node",
-      args: "bot.ts",
-      exec_mode: "fork",
-      interpreter: "none", 
-      env: {
-        NODE_ENV: "production",
-      }
-    }]
-  }
+  apps: [{
+    name: "baldridge-discord-logbot",
+    script: "./bot.ts",
+    exec_mode: "fork",    
+    interpreter: "/home/arobinson/.local/share/fnm/aliases/default/bin/node",
+    interpreter_args: "--import tsx", 
+    
+    restart_delay: 5000,
+    env: {
+      NODE_ENV: "production",
+    }
+  }]
+}
